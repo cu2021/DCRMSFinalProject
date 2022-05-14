@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="752.0" prefWidth="1550.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controls.UpdatePatientServiceController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="567.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8-update-user-96.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="717.0" layoutY="55.0" prefHeight="84.0" prefWidth="374.0" text="Update Patient Data" textFill="#050648">
+         <font>
+            <Font name="Arial Bold" size="36.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="28.0" layoutY="211.0" prefHeight="414.0" prefWidth="486.0">
+         <columnConstraints>
+            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="392.20001220703125" minWidth="10.0" prefWidth="118.79999389648438" />
+            <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="560.199951171875" minWidth="10.0" prefWidth="368.4000061035156" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label prefHeight="34.0" prefWidth="60.0" text="Name:">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="34.0" prefWidth="42.0" text="#ID:" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="34.0" prefWidth="73.0" text="Gender:" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="34.0" prefWidth="73.0" text="Address:" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nameTxtField" prefHeight="40.0" prefWidth="429.0" promptText="Full Name" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets left="5.0" right="5.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="idTxtField" prefHeight="40.0" prefWidth="429.0" promptText="Identity Number" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="addressField" prefHeight="40.0" prefWidth="429.0" promptText="Address" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <ComboBox fx:id="genderCompobox" prefHeight="26.0" prefWidth="179.0" styleClass="combo-box" stylesheets="@styles.css" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label prefHeight="34.0" prefWidth="107.0" text="Date Of Birth:" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="dateOfBirthField" prefHeight="26.0" prefWidth="256.0" promptText="Date Of Birth" styleClass="date-picker" stylesheets="@styles.css" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label prefHeight="34.0" prefWidth="111.0" text="Phone Number:" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="phoneNumber" prefHeight="40.0" prefWidth="429.0" promptText="Phone Number" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+         </children>
+      </GridPane>
+      <GridPane alignment="CENTER" layoutX="182.0" layoutY="641.0" prefHeight="58.0" prefWidth="256.0">
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="185.20001220703125" minWidth="10.0" prefWidth="91.0" />
+            <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="286.8000030517578" minWidth="10.0" prefWidth="95.80000000000001" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Button fx:id="updateButton" mnemonicParsing="false" onAction="#updateButtonHandle" text="Update">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+               </padding>
+            </Button>
+            <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#deleteButtonHandle" styleClass="buttonCancel" text="Delete" GridPane.columnIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+               </padding>
+            </Button>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </GridPane>
+      <TableView fx:id="tabelView" layoutX="566.0" layoutY="211.0" prefHeight="528.0" prefWidth="975.0">
+        <columns>
+          <TableColumn fx:id="tcName" prefWidth="174.4000244140625" text="Name" />
+          <TableColumn fx:id="tcID" prefWidth="159.20001220703125" text="Identity Number" />
+            <TableColumn fx:id="tcGender" prefWidth="101.60003662109375" text="Gender" />
+            <TableColumn fx:id="tcAddress" prefWidth="208.7999267578125" text="Address" />
+            <TableColumn fx:id="tcPhoneNumber" prefWidth="175.199951171875" text="Phone Number" />
+            <TableColumn fx:id="tcDob" minWidth="0.0" prefWidth="140.7999267578125" text="Date Of Birth" />
+        </columns>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TableView>
+      <GridPane layoutX="41.0" layoutY="164.0" prefHeight="58.0" prefWidth="565.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="310.20001220703125" minWidth="10.0" prefWidth="107.4" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="543.8" minWidth="10.0" prefWidth="358.599951171875" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="543.8" minWidth="10.0" prefWidth="95.40004882812502" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="30.0" prefWidth="131.0" text="Search By ID:">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="searchIdtxtField" prefHeight="41.0" prefWidth="366.0" promptText="Search By ID" GridPane.columnIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextField>
+            <Button fx:id="searchById" mnemonicParsing="false" onAction="#searchByIdHandle" text="Search" GridPane.columnIndex="2">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+            </Button>
+         </children>
+      </GridPane>
+      <ImageView fx:id="backButton" accessibleRole="BUTTON" fitHeight="65.0" fitWidth="74.0" layoutX="28.0" layoutY="26.0" onMouseClicked="#backButtonHandle" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8-back-arrow-96.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

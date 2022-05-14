@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="392.0" prefWidth="742.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controls.LoginFormController">
+   <children>
+      <VBox prefHeight="402.0" prefWidth="395.0" style="-fx-background-color: #0099ff;">
+         <children>
+            <ImageView fitHeight="403.0" fitWidth="395.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Images/logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+      <VBox prefHeight="402.0" prefWidth="346.0" style="-fx-background-color: #eee;">
+         <children>
+            <GridPane alignment="CENTER" focusTraversable="true" prefHeight="388.0" prefWidth="340.0" style="-fx-background-color: #eee;">
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="1.0" prefHeight="1.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="1.0" prefHeight="1.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="1.0" prefHeight="1.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="82.0" prefWidth="354.0" text="Login Form" textFill="#044361">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="36.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets top="45.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <VBox prefHeight="135.0" prefWidth="353.0" GridPane.rowIndex="1">
+                     <children>
+                        <TextField fx:id="usernameTextField" prefHeight="42.0" prefWidth="342.0" promptText="Username" stylesheets="@styles.css">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </TextField>
+                        <PasswordField fx:id="passwordField" prefHeight="42.0" prefWidth="342.0" promptText="Password" stylesheets="@styles.css">
+                           <VBox.margin>
+                              <Insets top="31.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </PasswordField>
+                     </children>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <padding>
+                        <Insets left="5.0" right="4.0" />
+                     </padding>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="142.0" prefWidth="346.0" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                     <children>
+                        <Label fx:id="status" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="1.0" prefHeight="138.0" prefWidth="303.0" text="The username or password is incorrect, if you have any issue connect to the IT Support." textAlignment="CENTER" textFill="RED" visible="false" wrapText="true">
+                           <font>
+                              <Font name="Andalus" size="13.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Button fx:id="signInButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#signInButtonHandle" stylesheets="@styles.css" text="Sign in">
+                                 <padding>
+                                    <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets right="20.0" />
+                                 </HBox.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="CancelButton" mnemonicParsing="false" onAction="#CancelButton" styleClass="buttonCancel" stylesheets="@styles.css" text="Cancel" textAlignment="CENTER" HBox.hgrow="ALWAYS">
+                                 <padding>
+                                    <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                                 </padding>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="25.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </children>
+</FlowPane>
