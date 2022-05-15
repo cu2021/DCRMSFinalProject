@@ -14,3 +14,42 @@
 2022/05/14 17:12:41 : Update Appointment: Appointment{id=5, patient=Patient{id=10, name=Ahmed, identityNo=1234567, gender=Male, mobileNo=15561516, address=Gaza, dob=2022-05-17}, dentist=Dentist{id=1, name=Ahmed, Age=50, address=Gaza, mobileNo=15161665}, date=2022-06-30}
 2022/05/14 17:12:55 : Delete Appointment: Appointment{id=5, patient=Patient{id=10, name=Ahmed, identityNo=1234567, gender=Male, mobileNo=15561516, address=Gaza, dob=2022-05-17}, dentist=Dentist{id=1, name=Ahmed, Age=50, address=Gaza, mobileNo=15161665}, date=2022-06-30}
 2022/05/14 17:13:00 : User Signed out
+2022/05/15 07:12:11 : Receptionist logged in Receptionists{id=1, username=Ahmed123, name=Ahmed, password=1234567}
+2022/05/15 07:13:14 : Insert patient Patient{id=14, name=Ahmed, identityNo=5525, gender=Male, mobileNo=5525, address=Germany, dob=2022-05-20}
+2022/05/15 07:13:56 : update Patient Patient{id=14, name=Ahmed, identityNo=5525, gender=Male, mobileNo=5252, address=Germany, dob=2022-05-20}
+2022/05/15 07:14:48 : Delete Patient Patient{id=14, name=Ahmed, identityNo=5525, gender=Male, mobileNo=5252, address=Germany, dob=2022-05-20}
+2022/05/15 07:15:16 : Insert Appointment Appointment{id=7, patient=Patient{id=10, name=Ahmed, identityNo=1234567, gender=Male, mobileNo=15561516, address=Gaza, dob=2022-05-17}, dentist=Dentist{id=2, name=Ali, Age=48, address=Khan Younis, mobileNo=516}, date=2022-05-21}
+2022/05/15 07:20:02 : Receptionist logged in Receptionists{id=1, username=Ahmed123, name=Ahmed, password=1234567}
+2022/05/15 07:20:09 : Delete Appointment: Appointment{id=6, patient=Patient{id=11, name=ALi, identityNo=1234562022, gender=Male, mobileNo=1566556, address=Khan Younis, dob=2022-05-25}, dentist=Dentist{id=2, name=Ali, Age=48, address=Khan Younis, mobileNo=516}, date=2022-05-31}
+2022/05/15 07:20:14 : Delete Appointment: Appointment{id=7, patient=Patient{id=10, name=Ahmed, identityNo=1234567, gender=Male, mobileNo=15561516, address=Gaza, dob=2022-05-17}, dentist=Dentist{id=2, name=Ali, Age=48, address=Khan Younis, mobileNo=516}, date=2022-05-20}
+2022/05/15 07:20:47 : Insert Appointment Appointment{id=8, patient=Patient{id=10, name=Ahmed, identityNo=1234567, gender=Male, mobileNo=15561516, address=Gaza, dob=2022-05-17}, dentist=Dentist{id=2, name=Ali, Age=48, address=Khan Younis, mobileNo=516}, date=2022-05-19}
+2022/05/15 07:25:28 : Receptionist logged in Receptionists{id=1, username=Ahmed123, name=Ahmed, password=1234567}
+2022/05/15 07:34:16 : Receptionist logged in Receptionists{id=1, username=Ahmed123, name=Ahmed, password=1234567}
+2022/05/15 07:36:17 : Receptionist logged in Receptionists{id=1, username=Ahmed123, name=Ahmed, password=1234567}
+2022/05/15 07:36:36 : Update Appointment: Appointment{id=8, patient=Patient{id=10, name=Ahmed, identityNo=1234567, gender=Male, mobileNo=15561516, address=Gaza, dob=2022-05-17}, dentist=Dentist{id=2, name=Ali, Age=48, address=Khan Younis, mobileNo=516}, date=2022-05-26}
+2022/05/15 07:36:43 : Delete Appointment: Appointment{id=8, patient=Patient{id=10, name=Ahmed, identityNo=1234567, gender=Male, mobileNo=15561516, address=Gaza, dob=2022-05-17}, dentist=Dentist{id=2, name=Ali, Age=48, address=Khan Younis, mobileNo=516}, date=2022-05-26}
+2022/05/15 07:38:02 : Insert Appointment Appointment{id=9, patient=Patient{id=11, name=ALi, identityNo=1234562022, gender=Male, mobileNo=1566556, address=Khan Younis, dob=2022-05-25}, dentist=Dentist{id=1, name=Ahmed, Age=50, address=Gaza, mobileNo=15161665}, date=2022-05-20}
+2022/05/15 07:38:23 : Update Appointment: Appointment{id=9, patient=Patient{id=11, name=ALi, identityNo=1234562022, gender=Male, mobileNo=1566556, address=Khan Younis, dob=2022-05-25}, dentist=Dentist{id=1, name=Ahmed, Age=50, address=Gaza, mobileNo=15161665}, date=2022-05-28}
+2022/05/15 07:38:32 : Update Appointment: Appointment{id=9, patient=Patient{id=11, name=ALi, identityNo=1234562022, gender=Male, mobileNo=1566556, address=Khan Younis, dob=2022-05-25}, dentist=Dentist{id=2, name=Ali, Age=48, address=Khan Younis, mobileNo=516}, date=2022-05-28}
+2022/05/15 07:38:38 : User Signed out
+2022/05/15 07:41:31 : Receptionist logged in Receptionists{id=1, username=Ahmed123, name=Ahmed, password=1234567}
+2022/05/15 07:41:57 : User Signed out
+2022/05/15 07:42:40 : Receptionist logged in Receptionists{id=1, username=Ahmed123, name=Ahmed, password=1234567}
+2022/05/15 07:57:30 : Receptionist logged in Receptionists{id=1, username=Ahmed123, name=Ahmed, password=1234567}
+2022/05/15 07:58:16 : Insert Appointment Appointment{id=10, patient=Patient{id=10, name=Ahmed, identityNo=1234567, gender=Male, mobileNo=15561516, address=Gaza, dob=2022-05-17}, dentist=Dentist{id=1, name=Ahmed, Age=50, address=Gaza, mobileNo=15161665}, date=2022-05-10}
+2022/05/15 07:59:05 : update Patient Patient{id=12, name=Fatema, identityNo=5151651, gender=Female, mobileNo=15616510, address=Europ, dob=2022-05-19}
+2022/05/15 08:04:39 : Receptionist logged in Receptionists{id=1, username=Ahmed123, name=Ahmed, password=1234567}
+2022/05/15 08:05:27 : Update Appointment: Appointment{id=10, patient=Patient{id=10, name=Ahmed, identityNo=1234567, gender=Male, mobileNo=15561516, address=Gaza, dob=2022-05-17}, dentist=Dentist{id=1, name=Ahmed, Age=50, address=Gaza, mobileNo=15161665}, date=2022-05-20}
+2022/05/15 08:05:41 : User Signed out
+2022/05/15 09:11:44 : Receptionist logged in Receptionists{id=1, username=Ahmed123, name=Ahmed, password=1234567}
+2022/05/15 09:13:48 : Insert patient Patient{id=15, name=Mohammed, identityNo=16516, gender=Female, mobileNo=1654165, address=Gaza, dob=2022-05-25}
+2022/05/15 09:14:31 : update Patient Patient{id=15, name=Mohammed, identityNo=16516, gender=Male, mobileNo=1654165, address=Gaza, dob=2022-05-25}
+2022/05/15 09:16:41 : Insert Appointment Appointment{id=11, patient=Patient{id=15, name=Mohammed, identityNo=16516, gender=Male, mobileNo=1654165, address=Gaza, dob=2022-05-25}, dentist=Dentist{id=1, name=Ahmed, Age=50, address=Gaza, mobileNo=15161665}, date=2022-05-25}
+2022/05/15 09:20:02 : Update Appointment: Appointment{id=11, patient=Patient{id=15, name=Mohammed, identityNo=16516, gender=Male, mobileNo=1654165, address=Gaza, dob=2022-05-25}, dentist=Dentist{id=2, name=Ali, Age=48, address=Khan Younis, mobileNo=516}, date=2022-05-30}
+2022/05/15 09:20:21 : Delete Appointment: Appointment{id=11, patient=Patient{id=15, name=Mohammed, identityNo=16516, gender=Male, mobileNo=1654165, address=Gaza, dob=2022-05-25}, dentist=Dentist{id=2, name=Ali, Age=48, address=Khan Younis, mobileNo=516}, date=2022-05-30}
+2022/05/15 09:22:35 : Receptionist logged in Receptionists{id=1, username=Ahmed123, name=Ahmed, password=1234567}
+2022/05/15 09:25:05 : Receptionist logged in Receptionists{id=1, username=Ahmed123, name=Ahmed, password=1234567}
+2022/05/15 09:25:13 : Delete Patient Patient{id=10, name=Ahmed, identityNo=1234567, gender=Male, mobileNo=15561516, address=Gaza, dob=2022-05-17}
+2022/05/15 09:25:31 : Delete Patient Patient{id=11, name=ALi, identityNo=1234562022, gender=Male, mobileNo=1566556, address=Khan Younis, dob=2022-05-25}
+2022/05/15 09:25:54 : Receptionist logged in Receptionists{id=1, username=Ahmed123, name=Ahmed, password=1234567}
+2022/05/15 09:25:57 : User Signed out

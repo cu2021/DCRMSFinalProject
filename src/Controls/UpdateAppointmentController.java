@@ -125,10 +125,8 @@ public class UpdateAppointmentController implements Initializable {
             EntityManager em = emf.createEntityManager();
 
             try {
-                Patient p = (Patient) em.
-                        createNamedQuery("Patient.FindById")
-                        .setParameter("identityNo",
-                                Integer.parseInt(this.searchIdtxtField.getText()))
+                Patient p = (Patient) em.createNamedQuery("Patient.FindById")
+                        .setParameter("identityNo", Integer.parseInt(this.searchIdtxtField.getText()))
                         .getSingleResult();
 
                 List<Appointment> appointments = em.
@@ -136,19 +134,27 @@ public class UpdateAppointmentController implements Initializable {
                         .getResultList();
 
                 Iterator<Appointment> ai = appointments.iterator();
+                boolean isExists = false;
                 while (ai.hasNext()) {
                     appointment = ai.next();
-                    if (appointment.getId() == p.getId()) {
-                        this.tableView.getSelectionModel().select(appointment);
+                    if (appointment.getPatient().getId() == p.getId()) {
+                        isExists = true;
                         break;
 
                     } else {
-                        Alert a = new Alert(Alert.AlertType.WARNING);
-                        a.setTitle("Error Retrieving");
-                        a.setContentText("No Appointment for this Patient: "
-                                + this.searchIdtxtField.getText() + ".");
-                        a.showAndWait();
+                        isExists = false;
+
                     }
+                }
+                if (isExists) {
+                    this.tableView.getSelectionModel().select(appointment);
+
+                } else {
+                    Alert a = new Alert(Alert.AlertType.WARNING);
+                    a.setTitle("Error Retrieving");
+                    a.setContentText("No Appointment for this Patient: "
+                            + this.searchIdtxtField.getText() + ".");
+                    a.showAndWait();
                 }
 
             } catch (NoResultException nre) {
@@ -156,6 +162,11 @@ public class UpdateAppointmentController implements Initializable {
                 a.setTitle("Error Retrieving");
                 a.setContentText("No Patient with this identity number: "
                         + this.searchIdtxtField.getText() + ".");
+                a.showAndWait();
+            } catch (Exception e) {
+                Alert a = new Alert(Alert.AlertType.WARNING);
+                a.setTitle("Error");
+                a.setContentText("Wrong Pat9ientId");
                 a.showAndWait();
             } finally {
                 em.close();
